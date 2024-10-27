@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd auto-todoism
+          cd $WORKING_DIR
           npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
