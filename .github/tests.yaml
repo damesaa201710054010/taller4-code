@@ -7,8 +7,8 @@ on:
     branches:
       - master
 env:
-    REPO_URL: XXXX
-    WORKING_DIR: repo_path
+    REPO_URL: https://github.com/damesaa201710054010/TestingGitActions.git
+    WORKING_DIR: TestingGitActions/auto-todoism
 
 jobs:
   run-tests:
@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd todoism-eafit-tests
+          cd auto-todoism
           npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
